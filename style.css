@@ -1,0 +1,115 @@
+/* global styles */
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after{
+    max-width: 100%;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+h1{
+    color: rgb(86, 86, 175);
+    font-size: 2em;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+label, input{
+    font-weight: bold;
+    color: rgb(62, 62, 122);
+    margin: 0.3em;
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(101, 101, 124);
+    width: 120px;
+    height: 60px;
+    margin: 0.5em;
+    padding: 0.2em;
+    background-color: gainsboro;
+    border-style: solid;
+    border-radius: 0.5em;
+    border-width: 0.2em;
+    border-color: rgb(175, 175, 175);
+    box-shadow: 5px 5px 10px rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: whitesmoke;
+}
+
+.brands{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+h2, h3{
+    color: rgb(70, 70, 100);
+}
+
+h2{
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.rewards{
+    display: grid;
+    place-content: center;
+}
+
+.rewards h3 h2{
+    grid-column: auto;  
+}
+
+#brand-name{
+    font-size: 1.5em;
+    font-style: oblique;
+}
+
+#brand-sum, #unlimited, #lifetime{
+    font-size: 1.2em;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+p{
+    margin: 1em;
+}
+
+#base1{
+    display: none;
+    background-color: rgb(93, 93, 165);
+    border-style: solid;
+    border-color: rgb(93, 93, 165);
+    border-radius: 1em;
+    margin: 0.3em;
+}
+
+#base2, #base3{
+    background-color: rgb(93, 93, 165);
+    border-style: solid;
+    border-color: rgb(93, 93, 165);
+    border-radius: 1em;
+    margin: 0.3em;
+}
+
+#bar2, #bar3{
+    background-color: rgb(93, 93, 165);
+}

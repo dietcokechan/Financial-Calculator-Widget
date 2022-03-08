@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Widget</title>
+        <script src="index.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="form">
+            <h1>Calculate your Rewards</h1>
+            <form onsubmit="">
+                <label for="bills">Vendor/Bills</label>
+                <input type="number" id="bills" name="bills" value="" placeholder="Enter a Number"><br>
+                <label for="media">Media/Ad Spend</label>
+                <input type="number" id="media" name="media" value="" placeholder="Enter a Number"><br>
+                <label for="spend">Corp.Spend</label>
+                <input type="number" id="spend" name="spend" value="" placeholder="Enter a Number"><br>
+                <label for="team">Team Project</label>
+                <input type="number" id="team" name="team" value="" placeholder="Enter a Number" oninput="sumFunc()"><br>
+                <!-- <button onclick="sumFunc()">Submit</button> -->
+            </form>
+        </div>
+        <h1>Compare your Rewards</h1>
+        <div class="brands">
+            <button id="brex" onclick="brandFunc()">Brex</button>
+            <button id="stripe" onclick="brandFunc()">Stripe</button>
+            <button id="amex" onclick="brandFunc()">Amex</button>
+        </div>
+        <div class="rewards">
+            <section class="brand-info">
+                <h3 id="brand-name"></h3>
+                <div id="base1">
+                    <p id="bar1"></p>
+                </div>
+                <p id="brand-sum"></p>
+            </section>
+            <section class="unlimited-rewards">
+                <h3>Unlimited Rewards</h3>
+                <div id="base2">
+                    <p id="bar2"></p>
+                </div>
+                <p id="unlimited"></p>
+            </section>
+            <section class="lifetime-rewards">
+                <h2>Lifetime Rewards</h2>
+                <div id="base3">
+                    <p id="bar3"></p>
+                </div>
+                <p id="lifetime"></p>
+            </section>
+        </div>
+    </body>
+</html>
